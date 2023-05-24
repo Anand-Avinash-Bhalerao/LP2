@@ -1,0 +1,22 @@
+create a plane
+create a cube
+cube ko texture de
+cube me rigidbody ka component add kar
+cube me fir rotaion freeze kar
+cube me fir ye script add kar bus
+
+
+private Rigidbody rb;
+
+start
+rb = GetComponent<Rigidbody>();
+
+
+update
+float x = Input.getAxix("Horizontal") * 5;
+float y = Input.getAcix("Vertical") * 5;
+
+Vector3 vel = rb.velocity;
+vel.x = x;
+vel.z = y;
+rb.velocity = vel

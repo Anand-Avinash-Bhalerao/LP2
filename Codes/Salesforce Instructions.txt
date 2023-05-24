@@ -1,0 +1,12 @@
+username: medhe.aditya@gmail.com
+password: TE@31254
+
+Codes 7 and 8
+1. switch to classic experience under your name
+2. go to developer console under your name
+3. create new apex class and code it
+4. create new visualforce page and code it
+5. preview page to view page
+
+Code 10
+https://www.youtube.com/watch?v=cIsTeoltmlI

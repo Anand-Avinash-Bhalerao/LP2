@@ -1,0 +1,44 @@
+<apex:page controller="currencyConverter">
+    <apex:form >
+    	<apex:pageBlock >
+        	<apex:pageBlockSection >
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Currency 1"/>
+                </apex:pageBlockSectionItem>
+              	<apex:pageBlockSectionItem >
+                    <apex:selectRadio value="{!currency1}" layout="pageDirection">
+                        <apex:selectOption itemValue="Rupee" itemLabel="Rupee"/>
+                        <apex:selectOption itemValue="Dollar" itemLabel="Dollar"/>
+                        <apex:selectOption itemValue="Pound" itemLabel="Pound"/>
+                    </apex:selectRadio>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Value 1"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:inputText value="{!value1}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Currency 2"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:selectRadio value="{!currency2}" layout="pageDirection">
+                        <apex:selectOption itemValue="Rupee" itemLabel="Rupee"/>
+                        <apex:selectOption itemValue="Dollar" itemLabel="Dollar"/>
+                        <apex:selectOption itemValue="Pound" itemLabel="Pound"/>
+                    </apex:selectRadio>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Result: "/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:inputText value="{!value2}" id="res"/>
+                    <apex:actionStatus id="sts" startText="Finding..."/>
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+            	<apex:commandButton value="Convert" action="{!convert}" reRender="res" status="sts"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

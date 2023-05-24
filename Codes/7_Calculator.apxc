@@ -1,0 +1,21 @@
+public class Calculator {
+    public integer n1 {get; set;}
+    public integer n2 {get; set;}
+    public integer res {get; set;}
+    
+    public void add() {
+        res = n1 + n2;
+    }
+    
+    public void subtract() {
+        res = n1 - n2;
+    }
+    
+    public void multiply() {
+        res = n1 * n2;
+    }
+    
+    public void divide() {
+        res = n1 / n2;
+    }
+}

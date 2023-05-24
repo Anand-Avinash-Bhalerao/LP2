@@ -1,0 +1,21 @@
+to change material
+
+
+private Material[] material;
+public int x;
+Renderer rend;
+
+start()
+x = 0;
+rend = GetComponent<Renderer>()
+rend.enabled = true
+rend.sharedMaterial = material[x]
+
+update
+rend.sharedMaterial = material[x]
+
+nextColor()
+if(x<2)
+	x++
+else
+	x = 0

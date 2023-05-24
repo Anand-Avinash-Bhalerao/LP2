@@ -1,0 +1,20 @@
+to change texture
+
+[SerializeField]
+private GameObject cube;
+
+[SerializeField]
+private Texture[] textures;
+
+private Renderer cubeRenderer;
+
+private int randomNo;
+
+start()
+cubeRenderer = cube.GetComponent<Renderer>();
+gameObject.GetComponent<Button>.onClick.AddListener(ChangeTexture);
+
+
+ChangeTexture()
+randomNo = Random.range(0,textures.length);
+cubeRenderer.material.mainTexture = textures[randomNo]

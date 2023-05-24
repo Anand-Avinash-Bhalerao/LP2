@@ -1,0 +1,10 @@
+video ko leke aao
+video ka size pata karo
+render texture create karo ek asset me
+render texture ka size set karo same as video
+fir video player dalo
+is video player me video and render texture dalo
+canvas banao
+canvas k andar ek raw image
+fir image pe jake full screen wala shortcut
+image pe render texture lagao
